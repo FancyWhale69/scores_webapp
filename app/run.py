@@ -14,7 +14,7 @@ app = Flask(__name__)
 # load model
 FILE_DIR = os.path.dirname(os.path.abspath('__file__'))
 PARENT_DIR2 = os.path.join(FILE_DIR, 'models') 
-model = joblib.load(PARENT_DIR2+'model.pkl')
+model = joblib.load(PARENT_DIR2+'/model.pkl')
 
 @app.route('/')
 def index():
