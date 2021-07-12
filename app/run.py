@@ -7,6 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 from flask import Flask
 from flask import Flask, request, jsonify, render_template
 import joblib
+import os
 
 app = Flask(__name__)
 
